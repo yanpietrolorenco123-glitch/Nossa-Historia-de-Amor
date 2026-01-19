@@ -1,1 +1,90 @@
 # Nossa-Historia-de-Amor
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Aniversário de Namoro 💕</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe4e1, #f8c8dc); /* Gradiente romântico para fundo */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #ff1493;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 90%; /* Responsivo para mobile */
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 5px solid #ff1493;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para destaque */
+        }
+        .message {
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ff1493;
+            font-weight: bold;
+            font-style: italic;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background 0.3s; /* Animação suave */
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Aniversário de Namoro, Meu Amor! 🎉💖</h1>
+    <img src="https://i.imgur.com/exemplo.jpg" alt="Nossa foto romântica"> <!-- Substitua pelo link real da sua foto -->
+    <div class="message">
+        <p class="highlight">Há 2 anos, você entrou na minha vida e mudou tudo para melhor. Te amo mais a cada dia!</p>
+        <p>Lembro do nosso primeiro beijo, das risadas e dos sonhos que compartilhamos. Você é minha melhor amiga e meu grande amor.</p>
+        <p class="highlight">Obrigado por ser você. Feliz aniversário de namoro! Vamos celebrar muitos mais juntos. ❤️</p>
+    </div>
+    <button onclick="showLove()">Clique Aqui para um Abraço Virtual</button>
+    <footer>Feito com amor para você 💕</footer>
+    
+    <script>
+        // Função para o botão (mais personalizada)
+        function showLove() {
+            alert('Te amo infinitamente! Aqui vai um beijo virtual 😘❤️');
+            // Opcional: Adicione confetes ou animação aqui se quiser avançar
+        }
+        
+        // Contador de dias juntos
+        const startDate = new Date('2022-05-15'); // Substitua pela data real
+        const today = new Date();
+        const daysTogether = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+        if (daysTogether > 0) {
+            document.querySelector('.message').innerHTML += `<p class="highlight">Já estamos juntos há ${daysTogether} dias incríveis! 🌟</p>`;
+        }
+    </script>
+</body>
+</html>
